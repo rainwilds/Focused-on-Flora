@@ -355,6 +355,9 @@ aside {
 
 
 }
+aside figcaption {
+  padding:var(--space--medium);
+}
 
 
 
