@@ -363,7 +363,7 @@ aside figcaption {
 
 
 figcaption {
-  background-color: light-dark(var(--color-contrast-dark--6), var(--color-contrast-light--6));
+  background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
   padding: var(--space-tiny);
 }
 
@@ -444,8 +444,8 @@ header>nav ul>li {
 
 
 a {
-  color: light-dark(var(--color-contrast-light--6),
-      var(--color-contrast-dark--6));
+  color: light-dark(var(--color-contrast-light-6),
+      var(--color-contrast-dark-6));
 
   /* Adobe font requirements */
 
@@ -455,8 +455,8 @@ a {
 
   text-decoration: none;
 
-  border-bottom: solid 5px light-dark(var(--color-contrast-light--1),
-      var(--color-contrast-dark--1));
+  border-bottom: solid 5px light-dark(var(--color-contrast-light-1),
+      var(--color-contrast-dark-1));
 }
 
 a:hover {
@@ -471,8 +471,8 @@ mark {
 }
 
 hr {
-  border-color: light-dark(var(--color-contrast-light--1),
-      var(--color-contrast-dark--1));
+  border-color: light-dark(var(--color-contrast-light-1),
+      var(--color-contrast-dark-1));
 
   margin: var(--space-medium) 0;
 }
@@ -626,7 +626,7 @@ main {
   column-gap: var(--space-medium);
 }
 main>section{
-  background-color: light-dark(var(--color-contrast-dark--6),var(--color-contrast-light--6));
+  background-color: light-dark(var(--color-contrast-dark-6),var(--color-contrast-light-6));
   padding: var(--space-huge);
 }
 
@@ -657,7 +657,7 @@ footer {
   column-gap: var(--space-medium);
 
 
-  background-color: light-dark(var(--color-contrast-dark--4), var(--color-contrast-light--4));
+  background-color: light-dark(var(--color-contrast-dark-4), var(--color-contrast-light-4));
   margin-top: var(--space-large);
 }
 
@@ -697,8 +697,8 @@ dialog {
 }
 
 dialog::backdrop {
-  background-color: light-dark(var(--color-contrast-light--1),
-      var(--color-contrast-dark--1));
+  background-color: light-dark(var(--color-contrast-light-1),
+      var(--color-contrast-dark-1));
 
 
   -webkit-backdrop-filter: blur(7px);
