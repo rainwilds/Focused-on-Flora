@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(4, 22, 31);">
+    <meta charset="UTF-8" >
+    <meta lang="en">
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        :root {
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template: repeat(3, auto) / repeat(8, 1fr);
+        }
+        header {
+            display: grid;
+            grid-template: subgrid / subgrid;
+            grid-area: 1 / 1 / 2 / 9;
+        }
+        nav {
+            background-color: rgba(28, 154, 173, 0.171);
+            backdrop-filter: blur(10px);
+            grid-column-start: 2;
+            grid-column-end: -2;
+            z-index: 2;
+            height: fit-content;
+            padding: 1em;
+            border-radius: 3px;
+            outline: 1px solid rgba(255, 255, 255, 0.26);
+            filter: drop-shadow(0 0 10px white);
+            align-self: end;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        header > nav>ul >li {
+            margin-right: 2em;;
+        }
+        header > section {
+            grid-area: 1 / 1 / span 2 / 9;
+            height: 100vh;
+
+            overflow: hidden;
+}
+        
+        header > section:first-of-type {
+            z-index: 1;
+background-color: rgba(0, 0, 0, 0.305);
+/* backdrop-filter: blur(10px) grayscale(0.5); */
+animation-name: feature;
+            animation-duration: 5s;
+            /* animation-delay: 1s; */
+            animation-timing-function: ease-in-out;
+        }
+        header {
+            overflow: none;
+        }
+
+        header img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            
+
+        }
+        header hgroup {
+            grid-area: 1 / 2 / span 2 / 9;
+    z-index: 1;
+    margin-top: 10vh;
+    background-color: #00000059;
+    height: fit-content;
+    width: fit-content;
+    padding: 2em;
+    backdrop-filter: blur(10px);
+        }
+
+        main {
+
+            /* grid-area: 2 / 2 / 3 / 8; */
+            grid-area: 1 / 1 / -1 / -1;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(10px, 15px));
+            /* gap: 2em; */
+            z-index: 10;
+        }
+        main >div {
+            /* height: 300px; */
+            /* border: solid gray 1px */
+        }
+        /* main>div:nth-child(2n){
+            background-color: rgba(255, 0, 0, 0.089);
+        } */
+  
+        @keyframes feature {
+  0% {
+    backdrop-filter: blur(20px) grayscale(1);
+  }
+
+  100% {
+    backdrop-filter: blur(0) grayscale(0);
+  }
+}
+    </style>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </nav>
+
+            <section>
+
+<img src="./drone.jpg">
+            </section>
+            <hgroup>
+                <h1>Main Heading</h1>
+                <p>SLaboris ex officia dolor eiusmod mollit minim cupidatat ipsum dolor consequat esse.</p>
+            </hgroup>
+        </header>
+        <main>
+
+        </main>
+
+    </body>
+</html>
