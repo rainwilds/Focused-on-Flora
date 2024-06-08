@@ -237,8 +237,8 @@ input,
 select,
 textarea {
   font: inherit;
-  background-color: light-dark(var(--color--accent--opaque--light), var(--color--accent--opaque--dark));
-  padding: var(--space--tiny);
+  background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
+  padding: var(--space-tiny);
   border: none;
 }
 
@@ -248,15 +248,15 @@ textarea {
 
 :root {
 
-  --space--tiny: 0.5rem;
+  --space-tiny: 0.5rem;
 
-  --space--small: 1rem;
+  --space-small: 1rem;
 
-  --space--medium: 2rem;
+  --space-medium: 2rem;
 
-  --space--large: 3.5rem;
+  --space-large: 3.5rem;
 
-  --space--huge: 5rem;
+  --space-huge: 5rem;
 }
 
 /* ----------------- */
@@ -266,29 +266,29 @@ textarea {
 :root {
   color-scheme: light dark;
 
-  --color--background--light: #cce4ce;
-  --color--background--dark: #26453d;
+  --color-background-light: #cce4ce;
+  --color-background-dark: #26453d;
 
-  --color--accent--light: #509180;
-  --color--accent--dark: #cff2d2;
+  --color-accent-light: #509180;
+  --color-accent-dark: #cff2d2;
 
-  --color--accent--opaque--light: rgb(44, 68, 61, 0.2);
-  --color--accent--opaque--dark: rgb(208, 227, 207, 0.2);
+  --color-accent-opaque-light: rgb(44, 68, 61, 0.2);
+  --color-accent-opaque-dark: rgb(208, 227, 207, 0.2);
 
-  --color--contrast--light: black;
-  --color--contrast--dark: white;
+  --color-contrast-light: black;
+  --color-contrast-dark: white;
 
-  --color--contrast--light--1: rgba(0, 0, 0, 0.1);
-  --color--contrast--dark--1: rgba(255, 255, 255, 0.1);
+  --color-contrast-light-1: rgba(0, 0, 0, 0.1);
+  --color-contrast-dark-1: rgba(255, 255, 255, 0.1);
 
-  --color--contrast--light--4: rgba(0, 0, 0, 0.4);
-  --color--contrast--dark--4: rgba(255, 255, 255, 0.4);
+  --color-contrast-light-4: rgba(0, 0, 0, 0.4);
+  --color-contrast-dark-4: rgba(255, 255, 255, 0.4);
 
-  --color--contrast--light--6: rgba(0, 0, 0, 0.6);
-  --color--contrast--dark--6: rgba(255, 255, 255, 0.6);
+  --color-contrast-light-6: rgba(0, 0, 0, 0.6);
+  --color-contrast-dark-6: rgba(255, 255, 255, 0.6);
 
-  --color--contrast--light--8: rgba(0, 0, 0, 0.8);
-  --color--contrast--dark--8: rgba(255, 255, 255, 0.8);
+  --color-contrast-light-8: rgba(0, 0, 0, 0.8);
+  --color-contrast-dark-8: rgba(255, 255, 255, 0.8);
 
   /* --color--static--light: white;
   --color--static--dark: black; */
@@ -299,38 +299,38 @@ textarea {
 /* -- FONT -- */
 
 :root {
-  --font--general--size--small: 15px;
+  --font-general-size-small: 15px;
 
-  --font--general--size--medium: 18px;
+  --font-general-size-medium: 18px;
 
-  --font--general--size--large: 20px;
-  --font--general--medium: 400;
-  --font--general--bold: 700;
+  --font-general-size-large: 20px;
+  --font-general-weight-medium: 400;
+  --font-general-weight-bold: 700;
 
-  --font--family--general: "lato", sans-serif;
+  --font-family-general: "lato", sans-serif;
 
-  --font--heading--size--small: 30px;
+  --font-heading-size-small: 30px;
 
-  --font--heading--size--medium: 40px;
+  --font-heading-size-medium: 40px;
 
-  --font--heading--size--large: 50px;
+  --font-heading-size-large: 50px;
 
-  --font--family--heading: "p22-stickley-pro-text", serif;
+  --font-family-heading: "p22-stickley-pro-text", serif;
 
-  --font--heading--medium: 400;
+  --font-heading-weight-medium: 400;
 
 
-  font-family: var(--font--family--general);
+  font-family: var(--font-family-general);
 
   /* Adobe font requirements */
 
-  font-weight: var(--font--general--medium);
+  font-weight: var(--font-general-weight-medium);
 
   font-style: normal;
 
   /* - */
 
-  font-size: var(--font--general--size--small);
+  font-size: var(--font-general-size-small);
 }
 
 :root {
@@ -356,33 +356,33 @@ aside {
 
 }
 aside figcaption {
-  padding:var(--space--medium);
+  padding:var(--space-medium);
 }
 
 
 
 
 figcaption {
-  background-color: light-dark(var(--color--contrast--dark--6), var(--color--contrast--light--6));
-  padding: var(--space--tiny);
+  background-color: light-dark(var(--color-contrast-dark--6), var(--color-contrast-light--6));
+  padding: var(--space-tiny);
 }
 
 
 
 p {
-  color: light-dark(var(--color--contrast--light),
-      var(--color--contrast--dark));
+  color: light-dark(var(--color-contrast-light),
+      var(--color-contrast-dark));
 }
 
 p:not(:last-of-type) {
-  margin-bottom: var(--space--medium);
+  margin-bottom: var(--space-medium);
 }
 
 
 /* ----------------- */
 header {
-  background-color: light-dark(var(--color--accent--opaque--light),
-      var(--color--accent--opaque--dark));
+  background-color: light-dark(var(--color-accent-opaque-light),
+      var(--color-accent-opaque-dark));
 
 }
 
@@ -444,19 +444,19 @@ header>nav ul>li {
 
 
 a {
-  color: light-dark(var(--color--contrast--light--6),
-      var(--color--contrast--dark--6));
+  color: light-dark(var(--color-contrast-light--6),
+      var(--color-contrast-dark--6));
 
   /* Adobe font requirements */
 
-  font-weight: var(--font--general--bold);
+  font-weight: var(--font-general-weight-bold);
 
   /* - */
 
   text-decoration: none;
 
-  border-bottom: solid 5px light-dark(var(--color--contrast--light--1),
-      var(--color--contrast--dark--1));
+  border-bottom: solid 5px light-dark(var(--color-contrast-light--1),
+      var(--color-contrast-dark--1));
 }
 
 a:hover {
@@ -464,17 +464,17 @@ a:hover {
 }
 
 mark {
-  background-color: light-dark(var(--color--accent--light),
-      var(--color--accent--dark));
-  color: light-dark(var(--color--contrast--dark),
-      var(--color--contrast--light));
+  background-color: light-dark(var(--color-accent-light),
+      var(--color-accent-dark));
+  color: light-dark(var(--color-contrast-dark),
+      var(--color-contrast-light));
 }
 
 hr {
-  border-color: light-dark(var(--color--contrast--light--1),
-      var(--color--contrast--dark--1));
+  border-color: light-dark(var(--color-contrast-light--1),
+      var(--color-contrast-dark--1));
 
-  margin: var(--space--medium) 0;
+  margin: var(--space-medium) 0;
 }
 
 h1,
@@ -483,12 +483,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font--family--heading);
+  font-family: var(--font-family-heading);
   line-height: 1;
 
   /* Adobe font requirements */
 
-  font-weight: var(--font--heading--medium);
+  font-weight: var(--font-heading-weight-medium);
 
   font-style: italic;
 
@@ -498,19 +498,19 @@ h6 {
 }
 
 h1 {
-  font-size: var(--font--heading--size--large);
+  font-size: var(--font-heading-size-large);
 }
 
 h2 {
-  font-size: var(--font--heading--size--medium);
+  font-size: var(--font-heading-size-medium);
 }
 
 h3 {
-  font-size: var(--font--heading--size--small);
+  font-size: var(--font-heading-size-small);
 }
 
 h4 {
-  font-size: calc(var(--font--heading--size--small) * 0.8);
+  font-size: calc(var(--font-heading-size-small) * 0.8);
 }
 
 
@@ -519,7 +519,7 @@ body {
 
   grid-template: min-content auto min-content / 10vw repeat(6, 1fr) 10vw;
 
-  column-gap: var(--space--medium);
+  column-gap: var(--space-medium);
 
   background-image: url(https://davidd709.sg-host.com/img/background-plant.png);
 
@@ -532,12 +532,12 @@ body {
 
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  background-color: light-dark(var(--color--background--light),
-      var(--color--background--dark));
+  background-color: light-dark(var(--color-background-light),
+      var(--color-background-dark));
 }
 
 header nav a {
-  padding: var(--space--medium);
+  padding: var(--space-medium);
   transition: background-color 0.5s ease-out,
     color 0.5s ease-out;
   border: none;
@@ -548,11 +548,11 @@ header nav nav a {
 }
 
 header nav a#header-nav-active {
-  background-color: light-dark(var(--color--accent--light),
-      var(--color--accent--dark));
+  background-color: light-dark(var(--color-accent-light),
+      var(--color-accent-dark));
 
-  color: light-dark(var(--color--contrast--dark),
-      var(--color--contrast--light));
+  color: light-dark(var(--color-contrast-dark),
+      var(--color-contrast-light));
   border: none;
 
 }
@@ -562,11 +562,11 @@ header nav a:not(#header-nav-active)>i {
 }
 
 header nav a:not(#header-nav-active):hover {
-  background-color: light-dark(var(--color--accent--opaque--light),
-      var(--color--accent--opaque--dark));
-  color: light-dark(var(--color--contrast--light),
-      var(--color--contrast--dark));
-  padding: var(--space--medium);
+  background-color: light-dark(var(--color-accent-opaque-light),
+      var(--color-accent-opaque-dark));
+  color: light-dark(var(--color-contrast-light),
+      var(--color-contrast-dark));
+  padding: var(--space-medium);
 }
 
 header nav a:not(#header-nav-active):hover i {
@@ -577,12 +577,12 @@ header nav a:not(#header-nav-active):hover i {
 
 
 nav li a[href*="plants"]+nav {
-  background-color: light-dark(var(--color--background--light), var(--color--background--dark));
-  padding: var(--space--small);
+  background-color: light-dark(var(--color-background-light), var(--color-background-dark));
+  padding: var(--space-small);
   position: absolute;
   z-index: 3;
   display: none;
-  border: solid 1px light-dark(var(--color--contrast--light), var(--color--contrast--dark));
+  border: solid 1px light-dark(var(--color-contrast-light), var(--color-contrast-dark));
 }
 
 nav li a[href*="plants"]:hover+nav {
@@ -590,13 +590,13 @@ nav li a[href*="plants"]:hover+nav {
 }
 
 details:not(:last-of-type) {
-  margin-bottom: var(--space--medium);
+  margin-bottom: var(--space-medium);
 }
 
 details summary {
-  font-weight: var(--font--general--bold);
+  font-weight: var(--font-general-weight-bold);
   cursor: pointer;
-  padding-bottom: var(--space--tiny);
+  padding-bottom: var(--space-tiny);
 }
 
 img {
@@ -613,7 +613,7 @@ header {
 
   grid-template: auto auto / subgrid;
 
-  margin: var(--space--large) auto;
+  margin: var(--space-large) auto;
 }
 
 main {
@@ -623,11 +623,11 @@ main {
 
   grid-template: auto / subgrid;
 
-  column-gap: var(--space--medium);
+  column-gap: var(--space-medium);
 }
 main>section{
-  background-color: light-dark(var(--color--contrast--dark--6),var(--color--contrast--light--6));
-  padding: var(--space--huge);
+  background-color: light-dark(var(--color-contrast-dark--6),var(--color-contrast-light--6));
+  padding: var(--space-huge);
 }
 
 main ul {
@@ -637,14 +637,14 @@ main ul {
 
 main li>a {
   border: none;
-  padding: var(--space--tiny);
-  background-color: light-dark(var(--color--accent--opaque--light),var(--color--accent--opaque--dark));
+  padding: var(--space-tiny);
+  background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
   border-radius: 10px;
-  color: light-dark(var(--color--contrast--light),var(--color--contrast--dark));
+  color: light-dark(var(--color-contrast-light),var(--color-contrast-dark));
 }
 
 main li:not(:last-of-type) {
-  margin-right: var(--space--small);
+  margin-right: var(--space-small);
 }
 
 footer {
@@ -654,23 +654,23 @@ footer {
 
   grid-template: auto / subgrid;
 
-  column-gap: var(--space--medium);
+  column-gap: var(--space-medium);
 
 
-  background-color: light-dark(var(--color--contrast--dark--4), var(--color--contrast--light--4));
-  margin-top: var(--space--large);
+  background-color: light-dark(var(--color-contrast-dark--4), var(--color-contrast-light--4));
+  margin-top: var(--space-large);
 }
 
 footer>div:first-of-type {
-  padding: var(--space--medium) var(--space--medium) var(--space--medium) 0;
+  padding: var(--space-medium) var(--space-medium) var(--space-medium) 0;
 }
 
 footer>div:last-of-type {
   grid-column: 1 / 9;
   grid-row-start: 2;
   display: flex;
-  gap: var(--space--small);
-  padding: 0 var(--space--medium) var(--space--medium) var(--space--medium);
+  gap: var(--space-small);
+  padding: 0 var(--space-medium) var(--space-medium) var(--space-medium);
 }
 
 
@@ -685,20 +685,20 @@ dialog {
   max-width: 40vw;
 
 
-  background-color: light-dark(var(--color--background--light),
-      var(--color--background--dark));
+  background-color: light-dark(var(--color-background-light),
+      var(--color-background-dark));
 
 
 
 
-  grid-template: repeat(3, auto) / var(--space--large) 1fr var(--space--large);
+  grid-template: repeat(3, auto) / var(--space-large) 1fr var(--space-large);
 
 
 }
 
 dialog::backdrop {
-  background-color: light-dark(var(--color--contrast--light--1),
-      var(--color--contrast--dark--1));
+  background-color: light-dark(var(--color-contrast-light--1),
+      var(--color-contrast-dark--1));
 
 
   -webkit-backdrop-filter: blur(7px);
@@ -708,7 +708,7 @@ dialog::backdrop {
 
 dialog>hgroup {
   grid-area: 2 / 2 / 3 / 3;
-  margin-top: var(--space--medium);
+  margin-top: var(--space-medium);
 
 
 
@@ -719,10 +719,10 @@ button {
   cursor: pointer;
 
   border: none;
-  padding: var(--space--small);
-  background-color: light-dark(var(--color--accent--opaque--light),var(--color--accent--opaque--dark));
+  padding: var(--space-small);
+  background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
   border-radius: 10px;
-  color: light-dark(var(--color--contrast--dark),var(--color--contrast--light));
+  color: light-dark(var(--color-contrast-dark),var(--color-contrast-light));
 }
 
 dialog>button {
@@ -732,7 +732,7 @@ dialog>button {
   width: fit-content;
 
   grid-column: 2;
-  margin: var(--space--medium) 0;
+  margin: var(--space-medium) 0;
   justify-self: end;
 
 }
@@ -746,7 +746,7 @@ dialog>img {
 aside>button {
 
   width: 100%;
-  margin-top: var(--space--medium);
+  margin-top: var(--space-medium);
 
 }
 aside>figure{
