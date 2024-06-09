@@ -627,6 +627,13 @@ details summary {
   cursor: pointer;
   padding-bottom: var(--space-tiny);
 }
+details p {
+  font-size: var(--font-2-size-small);
+}
+
+main > section li a {
+  font-size: var(--font-2-size-small);
+}
 
 
 
