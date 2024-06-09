@@ -220,16 +220,23 @@ button:not(:disabled) {
 }
 */
 
-/* -- RESET -- */
+/* -- browser reset and fix -- */
 
 * {
   margin: 0;
-
   padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 
 button,
 input
+
 /* select, TEST */
 /* textarea TEST */
   {
@@ -608,12 +615,7 @@ details summary {
   padding-bottom: var(--space-tiny);
 }
 
-img {
-  /* fix to ensure images are contained to container width */
-  max-width: 100%;
-  display: block;
-  box-sizing: border-box;
-}
+
 
 header {
   grid-area: 1 / 1 / 2 / 9;
