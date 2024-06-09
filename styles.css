@@ -131,10 +131,6 @@ textarea {
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace
 }
 
-ad-loader {
-    display: block
-}
-
 :focus {
     outline: #bb1450 solid 1px;
     outline-offset: .25rem
@@ -233,37 +229,32 @@ button:not(:disabled) {
 }
 
 button,
-input,
-select,
-textarea {
+input
+/* select, TEST */
+/* textarea TEST */
+  {
   font: inherit;
   background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   padding: var(--space-tiny);
   border: none;
 }
 
-/* ----------------- */
-
-/* -- SPACE -- */
+/***/
 
 :root {
+
+  /* -- space -- */
 
   --space-tiny: 0.5rem;
-
   --space-small: 1rem;
-
   --space-medium: 2rem;
-
   --space-large: 3.5rem;
-
   --space-huge: 5rem;
-}
 
-/* ----------------- */
+  /***/
 
-/* -- COLOURS -- */
+  /* -- colours -- */
 
-:root {
   color-scheme: light dark;
 
   --color-background-light: #cce4ce;
@@ -290,53 +281,52 @@ textarea {
   --color-contrast-light-8: rgba(0, 0, 0, 0.8);
   --color-contrast-dark-8: rgba(255, 255, 255, 0.8);
 
-  /* --color--static--light: white;
-  --color--static--dark: black; */
-}
+  /* --color--static--light: white; PLACEHOLDER */
+  /* --color--static--dark: black; PLACEHOLDER */
 
-/* ----------------- */
+  /***/
 
-/* -- FONT -- */
+  /* -- font -- */
 
-:root {
-  --font-general-size-small: 15px;
+  /* font 1 */
+  --font-1-family: "p22-stickley-pro-text", serif;
+  /* --font-1-weight-light: 400; PLACEHOLDER */
+  --font-1-weight-medium: 400;
+  /* --font-1-weight-heavy: 400; PLACEHOLDER */
 
-  --font-general-size-medium: 18px;
+  /* font 2 */
+  --font-2-family: "lato", sans-serif;
+  /* --font-2-weight-light: 400; PLACEHOLDER */
+  --font-2-weight-medium: 400;
+  --font-2-weight-heavy: 700;
+  --font-2-size-small: 15px;
+  --font-2-size-medium: 18px;
+  --font-2-size-large: 20px;
 
-  --font-general-size-large: 20px;
-  --font-general-weight-medium: 400;
-  --font-general-weight-bold: 700;
+  /* base font */
+  font-family: var(--font-2-family);
+  font-size: var(--font-2-size-medium);
 
-  --font-family-general: "lato", sans-serif;
-
-  --font-heading-size-small: 30px;
-
-  --font-heading-size-medium: 40px;
-
-  --font-heading-size-large: 50px;
-
-  --font-family-heading: "p22-stickley-pro-text", serif;
-
-  --font-heading-weight-medium: 400;
-
-
-  font-family: var(--font-family-general);
-
-  /* Adobe font requirements */
-
-  font-weight: var(--font-general-weight-medium);
-
+  /* adobe font requirements */
+  font-weight: var(--font-2-weight-medium);
   font-style: normal;
 
-  /* - */
+  /***/
 
-  font-size: var(--font-general-size-small);
-}
+  /* -- image -- */
 
-:root {
-  /* --fa-display: block; */
   --aspect-ratio: 1 / 1;
+
+  /***/
+
 }
+
+/* -- tags -- */
+
+
+/***/
+
+
 
 .grid-container {
   display: flex;
@@ -355,8 +345,9 @@ aside {
 
 
 }
+
 aside figcaption {
-  padding:var(--space-medium);
+  padding: var(--space-medium);
 }
 
 
@@ -379,7 +370,7 @@ p:not(:last-of-type) {
 }
 
 
-/* ----------------- */
+/***/
 header {
   background-color: light-dark(var(--color-accent-opaque-light),
       var(--color-accent-opaque-dark));
@@ -447,11 +438,11 @@ a {
   color: light-dark(var(--color-contrast-light-6),
       var(--color-contrast-dark-6));
 
-  /* Adobe font requirements */
+  /* adobe font requirements */
 
-  font-weight: var(--font-general-weight-bold);
+  font-weight: var(--font-2-weight-heavy);
 
-  /* - */
+  /***/
 
   text-decoration: none;
 
@@ -478,15 +469,16 @@ hr {
 }
 
 h1 {
-  font-family: var(---font-family-heading);
-  line-height:1;
+  font-family: var(---font-1-family);
+  font-size: 2.5rem;
+  line-height: 1;
 
-  /* Adobe font requirements */
+  /* adobe font requirements */
 
-  font-weight: var(--font-heading-weight-medium);
+  font-weight: var(--font-1-weight-medium);
   font-style: italic;
 
-  /* - */
+  /***/
 }
 
 h2,
@@ -494,31 +486,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-general);
+  font-family: var(--font-2-family);
   line-height: 1;
+  padding-bottom: var(--space-medium);
 
-/* Adobe requirements */
+  /* Adobe requirements */
 
-  font-weight: var(--font-general-weight-medium);
+  font-weight: var(--font-2-weight-medium);
   font-style: normal;
 
-  /* - */
+  /***/
 }
 
 h1 {
-  font-size: var(--font-heading-size-large);
+  font-size: 1.7rem;
 }
 
 h2 {
-  font-size: calc(var(--font-general-size-medium) * 4);
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: calc(var(--font-general-size-small) * 3);
+  font-size: 1.3rem;
 }
 
 h4 {
-  font-size: calc(var(--font-general-size-small) * 2);
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1.1rem;
 }
 
 
@@ -602,7 +603,7 @@ details:not(:last-of-type) {
 }
 
 details summary {
-  font-weight: var(--font-general-weight-bold);
+  font-weight: var(--font-2-weight-heavy);
   cursor: pointer;
   padding-bottom: var(--space-tiny);
 }
@@ -633,8 +634,9 @@ main {
 
   column-gap: var(--space-medium);
 }
-main>section{
-  background-color: light-dark(var(--color-contrast-dark-6),var(--color-contrast-light-6));
+
+main>section {
+  background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
   padding: var(--space-huge);
 }
 
@@ -646,9 +648,9 @@ main ul {
 main li>a {
   border: none;
   padding: var(--space-tiny);
-  background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+  background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   border-radius: 10px;
-  color: light-dark(var(--color-contrast-light),var(--color-contrast-dark));
+  color: light-dark(var(--color-contrast-light), var(--color-contrast-dark));
 }
 
 main li:not(:last-of-type) {
@@ -711,7 +713,7 @@ dialog::backdrop {
 
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  
+
 }
 
 dialog>hgroup {
@@ -728,9 +730,9 @@ button {
 
   border: none;
   padding: var(--space-small);
-  background-color: light-dark(var(--color-accent-opaque-light),var(--color-accent-opaque-dark));
+  background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   border-radius: 10px;
-  color: light-dark(var(--color-contrast-dark),var(--color-contrast-light));
+  color: light-dark(var(--color-contrast-dark), var(--color-contrast-light));
 }
 
 dialog>button {
@@ -757,7 +759,8 @@ aside>button {
   margin-top: var(--space-medium);
 
 }
-aside>figure{
+
+aside>figure {
   border-left: #ff7f5082 20vmin solid;
 }
 
