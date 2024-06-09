@@ -363,6 +363,7 @@ aside figcaption {
 figcaption {
   background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
   padding: var(--space-tiny);
+  font-size: var(--font-2-size-small);
 }
 
 
@@ -785,9 +786,7 @@ aside>figure {
   border-left: #ff7f5082 20vmin solid;
 }
 
-aside figcaption {
-  font-size: var(--font-2-size-small);
-}
+
 
 @media (max-width: 980px) {
   main section {
