@@ -476,8 +476,8 @@ hr {
 }
 
 h1 {
-  font-family: var(---font-1-family);
-  font-size: 2.5rem;
+  font-family: var(--font-1-family);
+  font-size: 3rem;
   line-height: 1;
 
   /* adobe font requirements */
