@@ -637,7 +637,7 @@ main>section li a {
 }
 
 main>section li a:hover {
-  light-dark(var(--color-accent-light), var(--color-accent-dark));
+  background-color: (var(--color-accent-light), var(--color-accent-dark));
 }
 
 
