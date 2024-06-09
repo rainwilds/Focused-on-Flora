@@ -376,6 +376,11 @@ p:not(:last-of-type) {
   margin-bottom: var(--space-medium);
 }
 
+main>section>p:first-of-type {
+  font-size: var(--font-2-size-large);
+}
+
+
 
 /***/
 header {
@@ -533,6 +538,9 @@ h6 {
   font-size: 1.1rem;
 }
 
+section>div:first-child>p {
+  font-size: var(--font-2-size-small);
+}
 
 body {
   display: grid;
@@ -614,6 +622,7 @@ details:not(:last-of-type) {
 }
 
 details summary {
+  font-size: var(--font-2-size-small);
   font-weight: var(--font-2-weight-heavy);
   cursor: pointer;
   padding-bottom: var(--space-tiny);
@@ -770,6 +779,9 @@ aside>figure {
   border-left: #ff7f5082 20vmin solid;
 }
 
+aside figcaption {
+  font-size: var(--font-2-size-small);
+}
 
 @media (max-width: 980px) {
   main section {
