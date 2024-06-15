@@ -674,17 +674,18 @@ main>section {
 }
 
 main ul {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-small);
   list-style-type: none;
 }
 
 
-main li>a {
+/* main li>a {
   padding: var(--space-tiny);
   background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   color: light-dark(var(--color-contrast-light), var(--color-contrast-dark));
-}
+} */
 
 
 
