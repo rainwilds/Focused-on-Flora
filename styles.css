@@ -703,6 +703,8 @@ footer {
   margin-top: var(--space-large);
 }
 
+
+
 footer>div:first-of-type {
   padding: var(--space-medium) var(--space-medium) var(--space-medium) 0;
 }
@@ -710,8 +712,9 @@ footer>div:first-of-type {
 footer>div:last-of-type {
   grid-column: 1 / 9;
   grid-row-start: 2;
-  display: flex;
-  gap: var(--space-small);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-medium);
   padding: 0 var(--space-medium) var(--space-medium) var(--space-medium);
 }
 
@@ -814,16 +817,15 @@ aside>button {
   }
 }
 
-@media (max-width: 1024px) {
-  header>nav {
-    display: none;
-  }
-}
 
 @media (max-width: 1200px) {
   body {
     grid-template: min-content auto min-content / 3vw repeat(6, 1fr) 3vw;
 
+  }
+
+  header>nav {
+    display: none;
   }
 
 
