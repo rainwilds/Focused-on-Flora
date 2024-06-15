@@ -681,11 +681,9 @@ main ul {
 
 
 main li>a {
-  border: none;
   padding: var(--space-tiny);
   background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   color: light-dark(var(--color-contrast-light), var(--color-contrast-dark));
-  border: solid 1px var(--color-accent-opaque-light);
 }
 
 
