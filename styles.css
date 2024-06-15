@@ -364,6 +364,10 @@ figcaption {
   background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
   padding: var(--space-small); 
 }
+footer figcaption{
+  font-family: var(--font-1-family);
+  font-weight: var(--font-1-weight-medium);
+}
 
 
 
@@ -708,8 +712,6 @@ footer {
 
 footer>div:first-of-type {
   padding: var(--space-medium) var(--space-medium) var(--space-medium) 0;
-  font-family: var(--font-1-family);
-  font-weight: var(--font-1-weight-medium);
 }
 
 footer>div:last-of-type {
