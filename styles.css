@@ -368,6 +368,7 @@ footer figcaption{
   font-family: var(--font-1-family);
   font-weight: var(--font-1-weight-medium);
   width: fit-content;
+  background: #ff7f5082;
 }
 
 
