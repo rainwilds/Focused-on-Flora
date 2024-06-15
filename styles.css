@@ -362,8 +362,9 @@ aside figcaption {
 
 figcaption {
   background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
-  padding: var(--space-tiny);
-  font-size: var(--font-2-size-small);
+  padding: var(--space-small);
+  font-family: var(--font-1-family);
+  font-weight: var(--font-1-weight-medium);
 }
 
 
@@ -531,6 +532,8 @@ h4 {
 }
 
 aside h4 {
+  font-family: var(--font-1-family);
+  font-weight: var(--font-1-weight-medium);
   padding-bottom: var(--space-small);
 }
 
