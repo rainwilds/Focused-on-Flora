@@ -698,14 +698,7 @@ main ul {
 
 footer {
   grid-area: 3 / 1 / 4 / 8;
-
   display: grid;
-
-  grid-template: auto / subgrid;
-
-  column-gap: var(--space-medium);
-
-
   background-color: light-dark(var(--color-contrast-dark-4), var(--color-contrast-light-4));
   margin-top: var(--space-large);
 }
