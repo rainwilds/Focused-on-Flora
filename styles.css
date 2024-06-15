@@ -710,13 +710,15 @@ footer>div:first-of-type {
 }
 
 footer>div:last-of-type {
-  grid-column: 1 / 9;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--space-medium);
   padding: var(--space-medium);
+  font-size: var(--font-2-size-small);
 }
-
+footer>div:last-of-type a {
+  border: none;
+}
 
 dialog {
   justify-self: center;
