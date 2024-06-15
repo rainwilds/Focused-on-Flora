@@ -670,7 +670,12 @@ main>section {
 
 main ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+}
+
+main li {
+  line-height: 5;
 }
 
 main li>a {
@@ -679,6 +684,7 @@ main li>a {
   background-color: light-dark(var(--color-accent-opaque-light), var(--color-accent-opaque-dark));
   border-radius: 10px;
   color: light-dark(var(--color-contrast-light), var(--color-contrast-dark));
+  border: solid 1px var(--color-accent-opaque-light);
 }
 
 main li:not(:last-of-type) {
