@@ -711,11 +711,10 @@ footer>div:first-of-type {
 
 footer>div:last-of-type {
   grid-column: 1 / 9;
-  grid-row-start: 2;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--space-medium);
-  padding: 0 var(--space-medium) var(--space-medium) var(--space-medium);
+  padding: var(--space-medium);
 }
 
 
