@@ -157,8 +157,10 @@
       <h3>Further Reading</h3>
       <ul>
         <li><a href="https://en.wikipedia.org/wiki/Phebalium_woombye" target="_blank">Wikipeda</a></li>
-        <li><a href="https://anpsa.org.au/plant_profiles/phebalium-woombye/" target="_blank">Australian Native Plant Society</a></li>
-        <li><a href="https://bie.ala.org.au/species/https://id.biodiversity.org.au/node/apni/2916598" target="_blank">Atlas of Living Australia</a></li>
+        <li><a href="https://anpsa.org.au/plant_profiles/phebalium-woombye/" target="_blank">Australian Native Plant
+            Society</a></li>
+        <li><a href="https://bie.ala.org.au/species/https://id.biodiversity.org.au/node/apni/2916598"
+            target="_blank">Atlas of Living Australia</a></li>
       </ul>
 
 
@@ -235,14 +237,8 @@
   </main>
 
   <footer>
-    <div style="
-          
-          grid-column: 4 / 8;
-          
-        ">
-        <h3>Explore More</h3>
-      <!-- <span style="margin-right: var(--space-medium)">Copyright Pete 2024</span>Website made with 💗 by <a
-        href="#">David Dufourq</a> -->
+    <div style="grid-column-start:4; writing-mode: vertical-rl;">
+      Copyright Pete 2024 | Website made with 💗 by <a href="#">David Dufourq</a>
     </div>
     <div>
 
@@ -264,20 +260,20 @@
       dialog.close();
     });
   </script>
-<script>
+  <script>
 
-  function getRandomAspectRatio() {
-    const aspectRatios = [
-      '1 / 1',
-      '2 / 3',
-      '3 / 2'
-    ];
-    const randomIndex = Math.floor(Math.random() * aspectRatios.length);
-    return aspectRatios[randomIndex];
-  }
+    function getRandomAspectRatio() {
+      const aspectRatios = [
+        '1 / 1',
+        '2 / 3',
+        '3 / 2'
+      ];
+      const randomIndex = Math.floor(Math.random() * aspectRatios.length);
+      return aspectRatios[randomIndex];
+    }
 
-  function createPictureTagString(id, aspectRatio, imageUrl, caption) {
-    return `
+    function createPictureTagString(id, aspectRatio, imageUrl, caption) {
+      return `
       <figure>
           <picture>
               <!-- light -->
@@ -320,38 +316,38 @@
           <figcaption>${caption}</figcaption>
       </figure>
     `;
-  }
+    }
 
-  const sideGalleryImages = [
-    { id: 'responsiveImage1', url: 'img/landscape.jpg', caption: 'Landscape Image 1' },
-    { id: 'responsiveImage2', url: 'img/landscape.jpg', caption: 'Landscape Image 2' },
-    { id: 'responsiveImage3', url: 'img/landscape.jpg', caption: 'Landscape Image 3' },
-  ];
+    const sideGalleryImages = [
+      { id: 'responsiveImage1', url: 'img/landscape.jpg', caption: 'Landscape Image 1' },
+      { id: 'responsiveImage2', url: 'img/landscape.jpg', caption: 'Landscape Image 2' },
+      { id: 'responsiveImage3', url: 'img/landscape.jpg', caption: 'Landscape Image 3' },
+    ];
 
-  const mainGalleryImages = [
-    { id: 'responsiveImage1', url: 'img/plant-1.jpg', caption: 'Plant 1 Caption' },
-    { id: 'responsiveImage2', url: 'img/plant-2.jpg', caption: 'Plant 2 Caption' },
-    { id: 'responsiveImage4', url: 'img/plant-3.jpg', caption: 'Plant 3 Caption' },
-    { id: 'responsiveImage5', url: 'img/plant-4.jpg', caption: 'Plant 4 Caption' },
-    { id: 'responsiveImage6', url: 'img/plant-7.jpg', caption: 'Plant 7 Caption' },
-    { id: 'responsiveImage7', url: 'img/plant-6.jpg', caption: 'Plant 6 Caption' },
-  ];
+    const mainGalleryImages = [
+      { id: 'responsiveImage1', url: 'img/plant-1.jpg', caption: 'Plant 1 Caption' },
+      { id: 'responsiveImage2', url: 'img/plant-2.jpg', caption: 'Plant 2 Caption' },
+      { id: 'responsiveImage4', url: 'img/plant-3.jpg', caption: 'Plant 3 Caption' },
+      { id: 'responsiveImage5', url: 'img/plant-4.jpg', caption: 'Plant 4 Caption' },
+      { id: 'responsiveImage6', url: 'img/plant-7.jpg', caption: 'Plant 7 Caption' },
+      { id: 'responsiveImage7', url: 'img/plant-6.jpg', caption: 'Plant 6 Caption' },
+    ];
 
-  function insertGallery(selector, images, aspectRatio = null) {
-    const container = document.querySelector(selector);
+    function insertGallery(selector, images, aspectRatio = null) {
+      const container = document.querySelector(selector);
 
-    images.forEach((image) => {
-      const randomAspectRatio = aspectRatio || getRandomAspectRatio();
-      const pictureTagString = createPictureTagString(image.id, randomAspectRatio, image.url, image.caption);
+      images.forEach((image) => {
+        const randomAspectRatio = aspectRatio || getRandomAspectRatio();
+        const pictureTagString = createPictureTagString(image.id, randomAspectRatio, image.url, image.caption);
 
-      container.insertAdjacentHTML('beforeend', pictureTagString);
-    });
-  }
+        container.insertAdjacentHTML('beforeend', pictureTagString);
+      });
+    }
 
-  // insertGallery('aside', sideGalleryImages, '1 / 1');
-  insertGallery('footer > div:last-of-type', mainGalleryImages, '3 / 2');
+    // insertGallery('aside', sideGalleryImages, '1 / 1');
+    insertGallery('footer > div:last-of-type', mainGalleryImages, '3 / 2');
 
-</script>
+  </script>
 
 
 
