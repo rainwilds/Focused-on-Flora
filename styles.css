@@ -362,11 +362,12 @@ aside figcaption {
 
 figcaption {
   background-color: light-dark(var(--color-contrast-dark-6), var(--color-contrast-light-6));
-  padding: var(--space-small); 
+  padding: var(--space-tiny); 
 }
 footer figcaption{
   font-family: var(--font-1-family);
   font-weight: var(--font-1-weight-medium);
+  width: fit-content;
 }
 
 
