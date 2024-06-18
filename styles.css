@@ -409,6 +409,7 @@ header>h1 {
   background-position-y: bottom;
 
   background-size: contain;
+  background-blend-mode: screen;
 
 
 }
